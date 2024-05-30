@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @estore %>
+
+<div>
+  <%= link_to "Edit this estore", edit_estore_path(@estore) %> |
+  <%= link_to "Back to estores", estores_path %>
+
+  <%= button_to "Destroy this estore", @estore, method: :delete %>
+</div>

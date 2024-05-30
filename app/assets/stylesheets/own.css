@@ -1,0 +1,29 @@
+th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  table {
+    border-spacing: 30px;
+  }
+  tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  tr:hover {background-color: #D6EEEE;}
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  .button {
+    transition-duration: 0.4s;
+  }
+  
+  .button:hover {
+    background-color: #04AA6D; /* Green */
+    color: rgb(255, 255, 255);
+  }

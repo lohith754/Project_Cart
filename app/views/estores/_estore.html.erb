@@ -1,0 +1,35 @@
+<table class="table">
+  <tr>
+    <th>Product</th>
+  </tr>
+
+  <tr>
+    <td>
+      <div id="<%= dom_id estore %>">
+        <% if estore.electric_image.attached? %>
+          <%= image_tag estore.electric_image , height: "200", width: "150"%>
+        <% end %>
+        
+        <p>
+          <strong>Name:</strong>
+          <%= estore.name %>
+        </p>
+
+        <p>
+          <strong>Price:</strong>
+          <%= estore.price %>
+        </p>
+
+        <p>
+          <strong>Brand:</strong>
+          <%= estore.brand %>
+        </p>
+
+        <p>
+          <strong>Material:</strong>
+          <%= estore.material %>
+        </p>
+      </div>
+    </td>
+  </tr>
+</table>

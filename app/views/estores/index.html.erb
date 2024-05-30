@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+<style>
+  div{
+    margin-bottom: 15px;
+  }
+  
+</style>
+
+<h1>Estores</h1>
+
+<div id="estores">
+  <% @estores.each do |estore| %>
+    <%= render estore %>
+    
+      <div class="btn btn-info"><i style="color:white"><%= link_to "Show this estore", estore %></i></div>
+
+  <% end %>
+</div>
+
+<%= link_to "New estore", new_estore_path %>

@@ -1,0 +1,22 @@
+<h1 style="color:green" ><b>Gallery Of Products<b></h1>
+
+<table border="10" , cellpadding="19" , cellspacing="10">
+<tr>
+<% count=0 %>
+<% @search_results.each do |e|%>
+
+<% if (count % 4) == 0%>
+</tr>
+<tr>
+<% end %>
+<% count+=1 %>
+<td><%= image_tag e.electric_image ,:height=>"100",:width=>"100" %><br />
+<%= e.name %><br />
+Price :<%= e.price %><br />
+Brand : <%= e.brand %><br />
+Material : <%= e.material %><br />
+<%= button_to 'Buy now', line_items_path(:store_id => e.id)%>
+ </td>
+<% end %>
+</tr>
+</table>

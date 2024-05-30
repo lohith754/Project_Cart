@@ -1,0 +1,2 @@
+module EstoresHelper
+end
